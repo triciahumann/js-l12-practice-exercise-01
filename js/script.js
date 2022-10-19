@@ -12,7 +12,7 @@ const getData = async function (numUsers) {
     //console.log(userResults); log out to make sure i got the array
 };
 
-getData();
+getData(1);
 
 const displayUsers = function (userResults) {
     randomFolks.innerHTML = "";
@@ -31,7 +31,7 @@ const displayUsers = function (userResults) {
 };
 
 selectUserNumber.addEventListener("change", function (e) {
-    const numUsers = e.target.event;
+    const numUsers = e.target.value;
     getData(numUsers);
 });
 
